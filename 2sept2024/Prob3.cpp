@@ -5,8 +5,8 @@ int solve(int n, int e, int d)
 {
     if(n==0)return -1;
     if(e==0 || d==0)return 0;
-    if(d<7) return ((d*e)%n==0)? d*e/n : d*e/n +1;
     if(n*6<e*7)return -1;
+    if(d<7) return ((d*e)%n==0)? d*e/n : d*e/n +1;
     
     int ans=0;
     
